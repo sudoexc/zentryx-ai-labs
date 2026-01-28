@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="py-8 border-t border-border">
       <div className="section-container">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="text-xl font-bold tracking-tight">ZENTRYX</span>
+          <span className="text-xl font-bold tracking-tight">TIZIM</span>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} ZENTRYX. {t('Все права защищены.', 'Barcha huquqlar himoyalangan.')}
           </p>

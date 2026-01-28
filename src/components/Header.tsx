@@ -14,7 +14,7 @@ const Header = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#" className="text-xl md:text-2xl font-bold tracking-tight">
-            ZENTRYX
+            TIZIM
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
