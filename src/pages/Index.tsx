@@ -2,8 +2,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import HeroSection from '@/components/sections/HeroSection';
 import AboutSection from '@/components/sections/AboutSection';
-import AIServicesSection from '@/components/sections/AIServicesSection';
-import AdditionalServicesSection from '@/components/sections/AdditionalServicesSection';
+import ServicesSection from '@/components/sections/ServicesSection';
 import PortfolioSection from '@/components/sections/PortfolioSection';
 import WhyUsSection from '@/components/sections/WhyUsSection';
 import ProcessSection from '@/components/sections/ProcessSection';
@@ -18,8 +17,7 @@ const Index = () => {
         <main>
           <HeroSection />
           <AboutSection />
-          <AIServicesSection />
-          <AdditionalServicesSection />
+          <ServicesSection />
           <PortfolioSection />
           <WhyUsSection />
           <ProcessSection />
