@@ -6,24 +6,24 @@ const WhyUsSection = () => {
 
   const reasons = [
     {
-      titleRu: 'Фокус на AI и результат',
-      titleUz: "AI va natijaga yo'naltirilgan yondashuv",
+      titleRu: 'Системный подход к AI',
+      titleUz: "AI'ga tizimli yondashuv",
     },
     {
-      titleRu: 'Продуктовый подход',
-      titleUz: 'Mahsulot fikrlashi',
+      titleRu: 'Единая логика и архитектура',
+      titleUz: 'Yagona mantiq va arxitektura',
     },
     {
-      titleRu: 'Чёткая логика и архитектура',
-      titleUz: 'Aniq arxitektura va mantiq',
+      titleRu: 'Интеграции в единую систему',
+      titleUz: 'Yagona tizimga integratsiyalar',
     },
     {
-      titleRu: 'Понимание бизнеса',
-      titleUz: 'Biznesni tushunish',
+      titleRu: 'Прозрачные процессы и контроль',
+      titleUz: 'Shaffof jarayonlar va nazorat',
     },
     {
-      titleRu: 'Минимум слов — максимум смысла',
-      titleUz: "Kam so'z, ko'p mazmun",
+      titleRu: 'Поддержка и развитие системы',
+      titleUz: "tizimni qo'llab-quvvatlash va rivojlantirish",
     },
   ];
 
@@ -36,7 +36,7 @@ const WhyUsSection = () => {
               {t('Преимущества', 'Afzalliklar')}
             </span>
             <h2 className="heading-section">
-              {t('Почему выбирают ZENTRYX', 'Nega ZENTRYX tanlanadi')}
+              {t('Почему выбирают Tizim Agency', 'Nega Tizim Agency tanlanadi')}
             </h2>
           </div>
         </AnimatedSection>

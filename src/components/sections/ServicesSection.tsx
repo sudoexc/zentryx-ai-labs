@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import AnimatedSection from '@/components/AnimatedSection';
-import { Bot, Globe, MessageSquare } from 'lucide-react';
+import { Bot, Globe, MessageSquare, Smartphone } from 'lucide-react';
 
 const ServicesSection = () => {
   const { t } = useLanguage();
@@ -27,12 +27,23 @@ const ServicesSection = () => {
       ],
     },
     {
+      icon: Smartphone,
+      titleRu: 'Приложения',
+      titleUz: 'Ilovalar',
+      items: [
+        { ru: 'iOS и Android', uz: 'iOS va Android' },
+        { ru: 'Кроссплатформенные решения', uz: 'Kross-platforma yechimlari' },
+        { ru: 'Поддержка и развитие', uz: "Qo'llab-quvvatlash va rivojlantirish" },
+      ],
+    },
+    {
       icon: MessageSquare,
       titleRu: 'Telegram-боты',
       titleUz: 'Telegram-botlar',
       items: [
         { ru: 'Боты для бизнес-процессов', uz: 'Biznes jarayonlari uchun botlar' },
         { ru: 'Интеграции с внешними сервисами', uz: 'Tashqi xizmatlar bilan integratsiya' },
+        { ru: 'Миниаппы', uz: 'Mini ilovalar' },
         { ru: 'Уведомления и автоматизация', uz: 'Bildirishnomalar va avtomatlashtirish' },
       ],
     },
@@ -52,7 +63,7 @@ const ServicesSection = () => {
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {services.map((service, index) => (
             <AnimatedSection
               key={index}

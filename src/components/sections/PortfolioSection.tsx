@@ -6,46 +6,58 @@ const PortfolioSection = () => {
 
   const projects = [
     {
-      titleRu: 'Проект #1',
-      titleUz: 'Loyiha #1',
-      descRu: 'AI-агент для автоматизации бизнеса',
-      descUz: 'Biznes jarayonlarini avtomatlashtirish uchun AI-agent',
-      tags: ['AI', 'Automation', 'Integration'],
+      titleRu: 'Eminel LaserLab — AI-продавец в Instagram',
+      titleUz: 'Eminel LaserLab — Instagramdagi AI-sotuvchi',
+      descRu:
+        'ИИ берёт на себя первичное общение с клиентами и увеличивает количество записей без администратора/чат оператора.',
+      descUz:
+        "AI mijozlar bilan birlamchi muloqotni o'z zimmasiga oladi va administrator/чат operatorisiz yozilishlar sonini oshiradi.",
+      tags: ['AI', 'SALES', 'BEAUTY'],
     },
     {
-      titleRu: 'Проект #2',
-      titleUz: 'Loyiha #2',
-      descRu: 'Корпоративная платформа с AI-аналитикой',
-      descUz: 'AI-tahlil bilan korporativ platforma',
-      tags: ['Platform', 'Analytics', 'AI'],
+      titleRu: 'GPT-Fitness — AI-фитнес трекер',
+      titleUz: 'GPT-Fitness — AI-fitnes treker',
+      descRu:
+        'Telegram-бот, который по фото еды считает калории и ведёт дневник питания пользователя.',
+      descUz:
+        'Telegram-bot: ovqat suratidan kaloriyani hisoblaydi va foydalanuvchi ovqatlanish kundaligini yuritadi.',
+      tags: ['AI', 'FITNESS', 'TELEGRAM', 'CALORIES'],
     },
     {
-      titleRu: 'Проект #3',
-      titleUz: 'Loyiha #3',
-      descRu: 'Telegram-бот для клиентской поддержки',
-      descUz: "Mijozlarni qo'llab-quvvatlash uchun Telegram-bot",
-      tags: ['Bot', 'Support', 'Telegram'],
+      titleRu: 'MultiPay — платёжная платформа',
+      titleUz: "MultiPay — to'lov platformasi",
+      descRu:
+        'Центральный бот для приёма оплат (крипта, Stars, Payme, РФ) и управления подписками в других ботах.',
+      descUz:
+        "To'lovlarni qabul qilish (kripto, Stars, Payme, RF) va boshqa botlarda obunalarni boshqarish uchun markaziy bot.",
+      tags: ['PAYMENTS', 'SUBSCRIPTIONS', 'TELEGRAM', 'PLATFORM'],
     },
     {
-      titleRu: 'Проект #4',
-      titleUz: 'Loyiha #4',
-      descRu: 'CRM-интеграция с AI-обработкой заявок',
-      descUz: "AI-so'rovlarni qayta ishlash bilan CRM-integratsiya",
-      tags: ['CRM', 'AI', 'Automation'],
+      titleRu: 'Vohas — сайт ресторана с админкой',
+      titleUz: 'Vohas — adminli restoran sayti',
+      descRu:
+        'Сайт ресторана с онлайн-меню, галереей и админ-панелью для управления блюдами и разделами.',
+      descUz:
+        "Restoran sayti: onlayn menyu, galereya va taomlar/bo'limlarni boshqarish uchun admin-panel.",
+      tags: ['WEBSITE', 'RESTAURANT', 'ADMIN', 'CMS'],
     },
     {
-      titleRu: 'Проект #5',
-      titleUz: 'Loyiha #5',
-      descRu: 'Интеллектуальная админ-панель',
-      descUz: 'Aqlli admin-panel',
-      tags: ['Dashboard', 'AI', 'Analytics'],
+      titleRu: 'ECOAXL — сервис вывоза мусора',
+      titleUz: 'ECOAXL — chiqindi olib ketish xizmati',
+      descRu:
+        'Telegram-бот и сайт-визитка для оформления подписки и вызова курьера с геолокацией.',
+      descUz:
+        "Obuna rasmiylashtirish va geolokatsiya bilan kuryerni chaqirish uchun Telegram-bot va sayt-vizitka.",
+      tags: ['TELEGRAM', 'SERVICE', 'SUBSCRIPTION', 'MAPS'],
     },
     {
-      titleRu: 'Проект #6',
-      titleUz: 'Loyiha #6',
-      descRu: 'AI-ассистент для продаж',
-      descUz: 'Savdo uchun AI-assistent',
-      tags: ['Sales', 'AI', 'Assistant'],
+      titleRu: 'VideoSaver — мини-приложение для скачивания видео',
+      titleUz: 'VideoSaver — video yuklab olish mini-ilovasi',
+      descRu:
+        'Mini App для загрузки видео из TikTok и Instagram без водяных знаков с историей скачиваний.',
+      descUz:
+        "TikTok va Instagramdan videolarni suv belgisisiz yuklash uchun Mini App, yuklab olishlar tarixi bilan.",
+      tags: ['MINI APP', 'VIDEO', 'DOWNLOAD'],
     },
   ];
 
@@ -71,8 +83,8 @@ const PortfolioSection = () => {
               delay={index * 0.08}
             >
               <div className="card-project group cursor-pointer">
-                <div className="aspect-video bg-secondary mb-6 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-muted-foreground/40">
+                <div className="card-project-cover mb-6">
+                  <span className="relative z-10 text-3xl font-bold text-muted-foreground/50">
                     0{index + 1}
                   </span>
                 </div>
@@ -82,7 +94,7 @@ const PortfolioSection = () => {
                 <p className="text-body mb-4">
                   {t(project.descRu, project.descUz)}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}

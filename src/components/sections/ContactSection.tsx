@@ -12,8 +12,8 @@ const ContactSection = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="heading-display mb-6 md:mb-8">
               {t(
-                'Готовы внедрить AI в ваш бизнес',
-                'Biznesingizga AI joriy etishga tayyormiz'
+                'Готовы внедрить систему в ваш бизнес',
+                "Biznesingizga tizimni joriy etishga tayyormiz"
               )}
             </h2>
             <p className="text-body-large mb-10 md:mb-12">
@@ -23,7 +23,9 @@ const ContactSection = () => {
               )}
             </p>
             <a
-              href="mailto:hello@zentryx.uz"
+              href="https://t.me/tizimagency"
+              target="_blank"
+              rel="noreferrer"
               className="btn-primary group inline-flex items-center gap-3"
             >
               {t('Связаться', "Bog'lanish")}

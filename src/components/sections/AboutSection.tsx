@@ -21,8 +21,8 @@ const AboutSection = () => {
             <div>
               <p className="text-body-large">
                 {t(
-                  'Zentryx — продуктовая IT-команда с фокусом на AI. Мы проектируем и внедряем AI-агентов под конкретные бизнес-задачи: продажи, поддержка, аналитика, операционные процессы.',
-                  "Zentryx — AI'ga yo'naltirilgan mahsulot jamoasi. Biz savdo, qo'llab-quvvatlash, tahlil va operatsion jarayonlar uchun AI-agentlarni loyihalab, joriy qilamiz."
+                  'Tizim Agency — продуктовая IT-команда с фокусом на AI. Мы проектируем и внедряем AI-агентов, сайты, telegram-боты, приложения под конкретные бизнес-задачи: продажи, поддержка, аналитика, операционные процессы.',
+                  "Tizim Agency — AI'ga yo'naltirilgan mahsulot jamoasi. Biz savdo, qo'llab-quvvatlash, tahlil va operatsion jarayonlar uchun AI-agentlar, saytlar, telegram-botlar va ilovalarni loyihalab, joriy qilamiz."
                 )}
               </p>
             </div>

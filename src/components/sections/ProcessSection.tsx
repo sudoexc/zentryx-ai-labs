@@ -12,8 +12,8 @@ const ProcessSection = () => {
     },
     {
       numRu: '02',
-      titleRu: 'Проектирование AI-решения',
-      titleUz: 'AI-yechimni loyihalash',
+      titleRu: 'Проектирование',
+      titleUz: 'Loyihalash',
     },
     {
       numRu: '03',

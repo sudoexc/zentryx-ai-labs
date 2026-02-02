@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="text-xl font-bold tracking-tight">TIZIM</span>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} ZENTRYX. {t('Все права защищены.', 'Barcha huquqlar himoyalangan.')}
+            © 2024 Tizim Agency. {t('Все права защищены.', 'Barcha huquqlar himoyalangan.')}
           </p>
         </div>
       </div>
